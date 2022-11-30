@@ -1,0 +1,171 @@
+/* 오늘의 쇼핑 제안 */
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-family);
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  white-space: nowrap;
+}
+
+header {
+  margin-top: 100px;
+  margin-bottom: 48px;
+  width: 1022px;
+  height: 50px;
+}
+
+.Logo {
+  width: 176px;
+  height: 40px;
+}
+
+section {
+  width: 1022px;
+  height: 354px;
+  margin: 0;
+}
+
+.minititle {
+  background-image: url(/Mission-02/assets/icon/shopping.svg);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+}
+
+.minititle > h2 {
+  margin-left: 30px;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+ul.container {
+  width: 1020px;
+  height: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0px;
+}
+
+li.items {
+  width: 200px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.items > a > img {
+  display: block;
+  margin: 20px auto auto auto;
+}
+
+.sale {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 3px 10px;
+  gap: 10px;
+
+  position: absolute;
+  width: 53px;
+  height: 30px;
+  left: 0px;
+  top: 0px;
+
+  background: var(--color-red-500);
+  border-radius: 0px 0px 4px 0px;
+
+  font-size: 16px;
+  color: var(--color-white);
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.review {
+  margin-left: 4px;
+  display: inline;
+}
+
+.name {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.delivery {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  color: var(--color-gray-700);
+  font-size: 14px;
+}
+
+.delivery > img {
+  width: 55px;
+  height: 16px;
+}
+
+.rate {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-gray-700);
+
+  width: 117px;
+  height: 17px;
+
+  line-height: 17px;
+}
+
+.etc {
+  margin-top: 12px;
+  margin-bottom: 38px;
+}
+
+.furniture > a > .etc > .rate {
+  background-image: url('/Mission-02/assets/sprites/rating-stars.png');
+  background-repeat: no-repeat;
+  background-size: 68px 185px;
+  background-position: left bottom -15px;
+}
+
+.renton > a > .etc > .rate {
+  background-image: url('/Mission-02/assets/sprites/rating-stars.png');
+  background-repeat: no-repeat;
+  background-size: 68px 185px;
+  background-position: left bottom -15px;
+}
+
+.drying-rack > a > .etc > .rate {
+  background-image: url('/Mission-02/assets/sprites/rating-stars.png');
+  background-repeat: no-repeat;
+  background-size: 68px 185px;
+  background-position: left bottom -32px;
+}
+
+.boohgle > a > .etc > .rate {
+  background-image: url('/Mission-02/assets/sprites/rating-stars.png');
+  background-repeat: no-repeat;
+  background-size: 68px 185px;
+  background-position: left bottom;
+}
+
+.deskset > a > .etc > .rate {
+  background-image: url('/Mission-02/assets/sprites/rating-stars.png');
+  background-repeat: no-repeat;
+  background-size: 68px 185px;
+  background-position: left bottom -32px;
+}
+
+.review {
+  margin-left: 75px;
+}

@@ -1,0 +1,276 @@
+/* 헤더 */
+header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.LoginBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 24px;
+  background-color: var(--color-gray-200);
+  margin-bottom: 5px;
+}
+
+.LoginBar__list {
+  width: 1020px;
+  display: flex;
+  padding: 4px 0;
+}
+
+.Login_Bar:nth-child(1) {
+  margin-left: 736px;
+}
+
+.Login_Bar:nth-child(2) {
+  margin-left: 8px;
+}
+
+.Login_Bar:nth-child(3) {
+  margin-left: 8px;
+}
+
+.Login_Bar:nth-child(4) {
+  order: -2;
+  margin-left: 4px;
+}
+
+.Login_Bar:nth-child(5) {
+  order: -1;
+  margin-left: 8px;
+}
+
+.Logo__name {
+  width: 176px;
+  height: 40px;
+  display: block;
+  visibility: hidden;
+}
+
+.container {
+  width: 1020px;
+  height: 116px;
+  display: grid;
+  grid-template-columns: 140px 198px 530px 70px 70px;
+  grid-template-rows: 84px 32px;
+  grid-template-areas:
+    'a b c d e'
+    'a f f d e  ';
+}
+
+.button--category {
+  grid-area: a;
+  width: 110px;
+  /* height: 116px; */
+  background-image: url(/Mission-04/assets/icon/hamburger.svg);
+  background-position: 40px 30px;
+  background-repeat: no-repeat;
+  background-color: var(--color-blue-600);
+  border: none;
+}
+
+.button--category--name {
+  position: relative;
+  top: 20px;
+  color: var(--color-white);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.Logo {
+  grid-area: b;
+  width: 176px;
+  height: 40px;
+  background-image: url(/Mission-04/assets/logo/logo.svg);
+  background-size: 176px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 20px;
+}
+
+.search {
+  grid-area: c;
+  display: flex;
+  position: relative;
+  top: 40px;
+  width: 516px;
+  height: 40px;
+  border: 1px solid var(--color-blue-600);
+}
+
+select {
+  width: 135px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='9' height='6' viewBox='0 0 9 6' fill='none' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath d='M9 0H0L4.69565 6L9 0Z' fill='%23767676' /%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  padding: 12px;
+  color: var(--color-gray-700);
+  border: none;
+}
+
+input {
+  width: 300px;
+  color: var(--color-gray-500);
+  padding: 13px 0 13px 10px;
+  border: none;
+}
+
+.voice,
+.keyword {
+  width: 40px;
+  border: none;
+  background-color: var(--color-white);
+}
+
+.myCoupang__button {
+  height: 58px;
+  width: 70px;
+  grid-area: d;
+  background-image: url('/Mission-04/assets/icon/my-coupang.svg');
+  background-size: 27px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: relative;
+  top: 28%;
+  border: none;
+  background-color: var(--color-white);
+}
+
+.myCoupang__button--name {
+  position: relative;
+  top: 50%;
+}
+
+.myCoupang > ul {
+  display: none;
+  width: 100px;
+  position: relative;
+  top: 50px;
+}
+
+.myCoupang.is--active > ul {
+  border: var(--color-gray-200) solid 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 60px;
+  padding: 0;
+}
+
+.myCoupang.is--active > ul::after {
+  content: '';
+  border-style: solid;
+  border-width: 0 6px 8px 6px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  display: block;
+  top: -7px;
+  width: 0;
+  z-index: 1;
+}
+
+.myCoupang.is--active > ul::before {
+  border-color: var(--color-gray-200) transparent;
+  border-style: solid;
+  border-width: 0 6px 8px 6px;
+  content: '';
+  position: absolute;
+  top: -9px;
+  width: 0;
+  z-index: 1;
+}
+
+.cart__button {
+  grid-area: e;
+  height: 58px;
+  width: 70px;
+  background-image: url('/Mission-04/assets/icon/cart.svg');
+  background-size: 28px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: relative;
+  top: 28%;
+  border: none;
+  background-color: var(--color-white);
+}
+
+.cart__button--name {
+  position: relative;
+  top: 50%;
+}
+
+.cart__button--number {
+  width: 18px;
+  height: 18px;
+  color: var(--color-white);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--color-blue-600);
+  border-radius: 50%;
+}
+
+.cart__message {
+  display: none;
+}
+
+.cart.cart--empty > .cart__message {
+  position: relative;
+  top: 50px;
+  border: var(--color-gray-200) solid 1px;
+  width: 200px;
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart.cart--empty > .cart__message::after {
+  content: '';
+  border-style: solid;
+  border-width: 0 6px 8px 6px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  display: block;
+  top: -7px;
+  width: 0;
+  left: 35px;
+  z-index: 1;
+}
+
+.cart.cart--empty > .cart__message::before {
+  border-color: var(--color-gray-200) transparent;
+  border-style: solid;
+  border-width: 0 6px 8px 6px;
+  content: '';
+  position: absolute;
+  top: -9px;
+  width: 0;
+  left: 35px;
+  z-index: 1;
+}
+
+.link {
+  grid-area: f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.link > li {
+  display: inline-block;
+}

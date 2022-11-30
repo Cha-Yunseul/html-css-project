@@ -1,0 +1,104 @@
+/* CSS 작성 */
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-family);
+}
+
+h1 {
+  margin: 0px;
+}
+
+header {
+  margin-top: 100px;
+  margin-bottom: 48px;
+  width: 1020px;
+}
+
+section {
+  position: relative;
+  width: 1020px;
+  height: 1010px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight--semi--bold);
+  display: inline;
+}
+
+h3 {
+  font-size: var(--font--small);
+  font-weight: var(--weight--semi--bold);
+  color: var(--color--gray--500);
+  display: inline;
+}
+
+.items {
+  border: 1px solid var(--color--gray--500);
+  margin-bottom: 16px;
+  position: relative;
+  padding: 20px 28px;
+  float: left;
+}
+
+.items:hover,
+.items:focus {
+  border-color: var(--color--blue-600);
+}
+
+.items:hover > a > .buttons::before {
+  content: '구매하기  ';
+}
+.items:hover > a > .buttons {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 112px;
+  height: 42px;
+  background-color: var(--color--blue-600);
+  border: none;
+  color: var(--color--gray-100);
+  font-size: var(--font--small);
+  transition: background-color var(--animation-duration) ease-in;
+  opacity: 100%;
+}
+.honeytea,
+.vaselin,
+.wettissue {
+  width: 502px;
+  height: 310px;
+}
+
+.handcream,
+.bibs,
+.hanssem,
+.dumpling,
+.febreze,
+.dyson {
+  width: 243px;
+  height: 310px;
+}
+
+button {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 42px;
+  height: 42px;
+  background-color: var(--color--gray--500);
+  border: none;
+  color: var(--color--gray-100);
+  opacity: 80%;
+  font-size: var(--font--small);
+}

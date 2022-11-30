@@ -1,0 +1,256 @@
+/* 카테고리별 추천 광고상품 */
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  margin-top: 100px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  white-space: nowrap;
+}
+
+header {
+  width: 1020px;
+  margin-bottom: 48px;
+}
+
+h6 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h2 {
+  display: inline;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.minititle__ad {
+  color: var(--color-blue-600);
+}
+
+article {
+  margin-top: 24px;
+}
+
+.houseware__title {
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--color-brown-300);
+}
+
+.kitchenware__title {
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--color-green-700);
+}
+
+.go {
+  background-image: url('/Mission-03/assets/icon/angle-right-default.svg');
+  background-repeat: no-repeat;
+  background-position: 65px center;
+  color: var(--color-gray-700);
+  font-size: 14px;
+}
+
+.houseware,
+.kitchenware {
+  display: flex;
+}
+
+.name {
+  width: 174px;
+  height: 634px;
+}
+
+.name__houseware,
+.name__kitchenware {
+  width: 100%;
+  height: 50%;
+}
+
+.hotkeyword {
+  height: -50%;
+}
+
+.hotkeyword__title {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 0 28px 0;
+}
+
+ul.hotkeyword__container {
+  padding: 0;
+  display: inline-block;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.list {
+  border: 1px solid var(--color-gray-400);
+  color: var(--color-brown-300);
+  font-weight: 400;
+  font-size: 12px;
+  margin: 6px 0 6px 0;
+  padding: 6px 10px;
+  gap: 5px;
+}
+
+.carousel__caption2,
+.carousel__caption1 {
+  position: absolute;
+  width: 260px;
+  height: 90px;
+  top: 483px;
+  background-color: var(--color-brown-300);
+  text-align: center;
+}
+
+.carousel__caption1 {
+  left: 30px;
+}
+
+.carousel__caption2 {
+  left: 350px;
+}
+
+.carousel__caption--large {
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.carousel__caption--small {
+  color: var(--color-white);
+  font-weight: 400;
+  font-size: 14px;
+  display: block;
+  margin-top: 8px;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.slider {
+  width: 100%;
+  max-width: 320px;
+  height: 631px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 2px;
+}
+
+.slides {
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.slider__nav {
+  box-sizing: border-box;
+  position: absolute;
+  width: 32px;
+  height: 12px;
+  left: 144px;
+  top: 597px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__navlink {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: var(--color-gray-600);
+}
+
+.slider__navlink:hover,
+.slider__navlink:focus {
+  background-color: var(--color-gray-700);
+}
+
+.productCard > ul {
+  width: 530px;
+  height: 634px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin: 8px 0px 8px 0px;
+}
+
+.card {
+  width: 160px;
+  height: 300px;
+  margin: 8px 0px 8px 16px;
+}
+.card__img {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 12px;
+}
+
+.card__name {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0 4px 12px 4px;
+}
+
+.card__price--number {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.card__price {
+  display: inline;
+}
+
+.card__price--label {
+  display: block;
+  color: var(--color-red-500);
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.card__delivery {
+  display: inline;
+}
+
+/* .productCard::after, */
+.hs1::after,
+.houseware::after {
+  content: '';
+  width: 1022px;
+  border-bottom: 2px solid var(--color-brown-300);
+  position: absolute;
+}
+
+.hs2::after,
+.kitchenware::before {
+  content: '';
+  width: 1022px;
+  border-bottom: 2px solid var(--color-green-700);
+  position: absolute;
+}
